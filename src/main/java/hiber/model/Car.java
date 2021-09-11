@@ -3,7 +3,7 @@ package hiber.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
 
     @Id
@@ -18,7 +18,7 @@ public class Car {
     int series;
 
     @OneToOne(mappedBy = "userCar")
-    private User user;
+    User user;
 
     public Car(){}
 
